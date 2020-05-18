@@ -95,7 +95,7 @@ def google_map_get():
     print("Current Page: " + str(count))
     sub_domain = ['.com', '.net', '.org']
     while True:
-        url = ''
+        url = 'https://www.google.com/search?tbm=map&authuser=0&hl=zh-CN&gl=hk&pb=!4m12!1m3!1d404635.12547753786!2d-103.87902292743276!3d39.44015060429218!2m3!1f0!2f0!3f0!3m2!1i1365!2i937!4f13.1!7i20!8i0!10b1!12m8!1m1!18b1!2m3!5m1!6e2!20e3!10b1!16b1!19m4!2m3!1i360!2i120!4i8!20m57!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!2i240!7m42!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e3!2b0!3e3!1m3!1e8!2b0!3e3!1m3!1e3!2b1!3e2!1m3!1e9!2b1!3e2!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e10!2b0!3e4!2b1!4b1!9b0!22m6!1sGg3DXq2hIcWRr7wP14ys2A4%3A286!2s1i%3A0%2Ct%3A20588%2Cp%3AGg3DXq2hIcWRr7wP14ys2A4%3A286!4m1!2i20588!7e81!12e3!24m46!1m12!13m6!2b1!3b1!4b1!6i1!8b1!9b1!18m4!3b1!4b1!5b1!6b1!2b1!5m5!2b1!3b1!5b1!6b1!7b1!10m1!8e3!14m1!3b1!17b1!20m2!1e3!1e6!24b1!25b1!26b1!30m1!2b1!36b1!43b1!52b1!55b1!56m2!1b1!3b1!65m5!3m4!1m3!1m2!1i224!2i298!26m4!2m3!1i80!2i92!4i8!30m28!1m6!1m2!1i0!2i0!2m2!1i458!2i937!1m6!1m2!1i1315!2i0!2m2!1i1365!2i937!1m6!1m2!1i0!2i0!2m2!1i1365!2i20!1m6!1m2!1i0!2i917!2m2!1i1365!2i937!31b1!34m13!2b1!3b1!4b1!6b1!8m3!1b1!3b1!4b1!9b1!12b1!14b1!20b1!23b1!37m1!1e81!42b1!46m1!1e2!47m0!49m1!3b1!50m16!1m11!2m7!1u2!4z6K-E5YiG5pyA6auY!5e1!9s0ahUKEwjSgvzvvL7pAhXuy4sBHfz6B6cQ_KkBCOkEKBY!10m2!2m1!1e1!3m1!1u2!4BIAE!2e2!3m2!1b1!3b0!59BQ2dBd0Fn!65m0&q=Schools&tch=1&ech=4&psi=Gg3DXq2hIcWRr7wP14ys2A4.1589841182668.1'
         # 上面修改成 Google Map的搜索结果网址就ojbk了
         x = requests.get(url)
         json_string = x.text.replace('/*""*/', "")
